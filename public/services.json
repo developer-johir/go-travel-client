@@ -1,0 +1,56 @@
+// [
+//     {
+//         "service_id": "01",
+//         "title": "Lake Geneva, France",
+//         "img": "https://tourx-react.b-cdn.net/static/media/p-6.1c3145eb.png",
+//         "price": "250",
+//         "rating": "3.56",
+//         "review": "679",
+//         "description": "Lake Geneva (or Lac Léman) is a crescent-shaped lake shared between France and Switzerland, and overlooked by the Alps. Geneva, the Swiss city at its southern tip, is a diplomatic hub with luxury shops and a cobbled old town. On the southern, French side, is the spa town and resort of Évian-les-Bains. The chic, palm-studded Swiss Riviera stretches along the north shore from Lausanne to Montreux. Today we feature the Lake Geneva, also known as Lac Léman or Lake Leman (German, Genfersee), the largest lake in central Europe, about 583 sq km in area, straddling the border between Switzerland and France. The largest part of the lake, about 363 sq km, is in western Switzerland."
+//     },
+//     {
+//         "service_id": "02",
+//         "title": "French Rivira, France",
+//         "img": "https://tourx-react.b-cdn.net/static/media/p-5.194db7b2.png",
+//         "price": "240",
+//         "rating": "4.28",
+//         "review": "369",
+//         "description": "The French Riviera (or Côte d'Azur) is the Mediterranean coast of southeastern France. It includes famously glamorous beach resorts such as Saint-Tropez and Cannes, and the independent microstate of Monaco. A health retreat in the 18th century, the area later attracted aristocrats, artists and the 1960s jet set. Today it’s an established holiday destination, with paths connecting many coastal villages and towns. The French Riviera is known for its beaches, views, picture perfect water, yachts and as a playground for the wealthy. It also has charming towns and villages (and Monaco, which is an independent state) and a highly regarded art and culture scene.Dec"
+//     },
+//     {
+//         "service_id": "03",
+//         "title": "Amalfi Costa, Italy",
+//         "img": "https://tourx-react.b-cdn.net/static/media/p-4.5a3083bb.png",
+//         "price": "200",
+//         "rating": "3.37",
+//         "review": "669",
+//         "description": "The Amalfi Coast is a 50-kilometer stretch of coastline along the southern edge of Italy’s Sorrentine Peninsula, in the Campania region. It’s a popular holiday destination, with sheer cliffs and a rugged shoreline dotted with small beaches and pastel-colored fishing villages. The coastal road between the port city of Salerno and clifftop Sorrento winds past grand villas, terraced vineyards and cliffside lemon groves. The coastal location has the freshest seafood available and has attracted some of the best chefs in the world. But the local cuisine is sure to satisfy any Italian food lover. The famous clifftop towns of Positano and Ravello are known for their Terraces and windy road adding to the majestic charm of the seaside coast."
+//     },
+//     {
+//         "service_id": "04",
+//         "title": "Mount Dtna, Italyr",
+//         "img": "https://tourx-react.b-cdn.net/static/media/p-3.460015b6.png",
+//         "price": "170",
+//         "rating": "4.57",
+//         "review": "690",
+//         "description": "Mount Etna, or simply Etna, is an active stratovolcano on the east coast of Sicily, Italy, in the Metropolitan City of Catania, between the cities of Messina and Catania. It lies above the convergent plate margin between the African Plate and the Eurasian Plate. Since 2000, Etna has had four flank eruptions – in 2001, 2002–2003, 2004–2005, and 2008–2009. Summit eruptions occurred in 2006, 2007–2008, January–April 2012, in July–October 2012, December 2018 and again in February 2021."
+//     },
+//     {
+//         "service_id": "05",
+//         "title": "Lake Garda, Italy",
+//         "img": "https://tourx-react.b-cdn.net/static/media/p-2.02c7fd31.png",
+//         "price": "195",
+//         "rating": "2.48",
+//         "review": "498",
+//         "description": "Lake Garda, in northern Italy, is known for its crystal clear water. At the south end, the town of Sirmione is dominated by the Rocca Scaligera, a fortress with harbor views. The nearby Grotte di Catullo archaeological site includes a Roman villa. On the lake's western shore, in Gardone Riviera, is Il Vittoriale degli Italiani, former home of poet d’Annunzio. The Dolomites frame Riva del Garda, a resort in the north. Several towns are close to each other here and you can use the ferry as a hop-on hop-off boat and visit a few of them. Riva del Garda and Torbole at the very end of the lake are well worth visiting."
+//     },
+//     {
+//         "service_id": "06",
+//         "title": "Paris Hill Tour",
+//         "img": "https://tourx-react.b-cdn.net/static/media/p-1.43d43fdd.png",
+//         "price": "135",
+//         "rating": "3.66",
+//         "review": "374",
+//         "description": "Arrive at Airport & transfer to hotel The rest of day is at leisure so that you can relax after your long haul flight. Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré. Do you find it difficult to search the hill-station packages for some specific destination and vice versa? We have compiled a list of hill-station packages in Paris to allow for quick and easy searching. These include individual and group Paris hill-station tour packages. You can even speak to our..."
+//     }
+// ]
