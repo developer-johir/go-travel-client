@@ -1,17 +1,24 @@
-import React from 'react';
+import React from "react";
 
-const ServicesCard = ({service}) => {
-    const {img, title, price, description, rating, review} = service;
-    return (
-        <div className='bo border m-5 rounded'>
-            <img src={img} alt="" />
-            <h2 className='text-w text-white text-4xl'>{title}</h2>
-            <h4>Rating: {rating}</h4>
-            <h3 className='text-red-600 font-bold'>Price: {price}</h3>
-            <p>{description}</p>
-            <h4>Review: {review}</h4>
+const ServicesCard = ({ service }) => {
+  const { img, title, price, description, rating, review } = service;
+  return (
+    <div className="max-w-screen-xl mx-auto m-5 rounded">
+      <div className="card w-full bg-base-100 shadow-xl">
+        <figure>
+          <img className="img-f image-full mt-3 rounded-lg" src={img} alt="Shoes" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title text-3xl">{title}</h2>
+          <p className="card-title text-5sm text-red-500">Price: ${price}</p>
+          <p>{description}</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">view details</button>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ServicesCard;
