@@ -4,7 +4,7 @@ import logo from '../../../assets/logo.png'
 
 const Header = () => {
     return (
-        <div className='max-w-screen-xl mx-auto'>
+        <div className='max-w-screen-xl mx-auto py-3'>
             <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
