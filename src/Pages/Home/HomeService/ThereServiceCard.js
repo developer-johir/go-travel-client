@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ServicesCard = ({service}) => {
-    const {img, title, price, description, rating, review} = service;
+const ThereServiceCard = ({services}) => {
+    const {img, title, price, description, rating, review} = services;
     return (
         <div className='bo border m-5 rounded'>
             <img src={img} alt="" />
@@ -14,4 +14,4 @@ const ServicesCard = ({service}) => {
     );
 };
 
-export default ServicesCard;
+export default ThereServiceCard;
