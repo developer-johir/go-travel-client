@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
 
 const Footer = () => {
     return (
         <div className='bg-slate-800 py-5'>
 
-<footer className="max-w-screen-xl mx-auto footer p-10 bg-slate-800 text-white border-b-2 border-red-500">
+<footer className="max-w-screen-xl mx-auto footer py-20 px-10 bg-slate-800 text-white border-b-2 border-red-500">
   <div>
-    <img className='w-20 h-20' src={logo} alt="" />
-    <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+  <div className='flex'>
+      <Link to='/'><img className='w-20 h-20' src={logo} alt="" /></Link>
+    <Link to='/' className="normal-case font-bold text-3xl mt-6">Go-Travel</Link>
+    </div>
+    <p className='mt-5'>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
   </div> 
   <div>
     <span className="footer-title">Services</span> 
