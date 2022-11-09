@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../../assets/logo.png'
 
 const Header = () => {
     return (
@@ -18,15 +19,18 @@ const Header = () => {
         <li><Link to='/blog'>Blog</Link></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <div className='flex'>
+      <Link to='/'><img className='w-12 h-12' src={logo} alt="" /></Link>
+    <Link to='/' className="normal-case font-bold text-3xl mt-1">Go-Travel</Link>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
-      <li><a>Item 1</a></li>
-      <li tabIndex={0}>
-        <a>Item 3</a>
-      </li>
-      <li><a>Item 3</a></li>
+    <li><Link to='/'>Home</Link></li>
+        <li tabIndex={0}>
+        <Link to='/services'>Services</Link>
+        </li>
+        <li><Link to='/blog'>Blog</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
@@ -35,7 +39,7 @@ const Header = () => {
     </button>
   <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img src="https://placeimg.com/80/80/people" />
+          <img src="https://placeimg.com/80/80/people" alt='' />
         </div>
       </label>
   </div>
