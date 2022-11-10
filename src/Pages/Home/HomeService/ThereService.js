@@ -32,7 +32,7 @@ const ThereService = () => {
         ))}
       </div>
       <div className="max-w-screen-xl mx-auto  text-center pb-14">
-        <Link to='/services'>
+        <Link to="/services">
           <button className="btn btn-primary font-bold w-96">See all</button>
         </Link>
       </div>
