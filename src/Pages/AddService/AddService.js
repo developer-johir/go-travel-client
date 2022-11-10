@@ -4,8 +4,7 @@ import useTitle from '../../hooks/useTitle';
 const AddService = () => {
     useTitle('Add Service')
     return (
-        <div>
-            <h2>This is Add Service</h2>
+        <div className='py-72'>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link} from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import useTitle from "../../hooks/useTitle";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
@@ -7,6 +7,11 @@ import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 const Login = () => {
   const { login } = useContext(AuthContext);
   useTitle('Login');
+  const location = useLocation();
+  const navigate = useNavigate();
+  
+
+  const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -24,6 +29,20 @@ const Login = () => {
         console.log(currentUser);
 
         // get jwt token
+        fetch("http://localhost:5000/jwt", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(currentUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            // local storage is the easiest but the not the best place to store jwt token
+            localStorage.setItem("genius-token", data.token);
+            navigate(from, { replace: true });
+          });
 
       })
       .catch((error) => console.log(error));

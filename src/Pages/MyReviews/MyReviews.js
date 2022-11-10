@@ -4,8 +4,7 @@ import useTitle from '../../hooks/useTitle';
 const MyReviews = () => {
     useTitle('My Reviews')
     return (
-        <div>
-            <h2>This is My Reviews</h2>
+        <div className='py-72'>
         </div>
     );
 };
