@@ -1,15 +1,14 @@
 import React, { useContext } from "react";
-import { Link, useLocation, useNavigate} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import useTitle from "../../hooks/useTitle";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
   const { login } = useContext(AuthContext);
-  useTitle('Login');
+  useTitle("Login");
   const location = useLocation();
   const navigate = useNavigate();
-  
 
   const from = location.state?.from?.pathname || "/";
 
@@ -29,7 +28,7 @@ const Login = () => {
         console.log(currentUser);
 
         // get jwt token
-        fetch("http://localhost:5000/jwt", {
+        fetch("https://go-travel-server.vercel.app/jwt", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -43,7 +42,6 @@ const Login = () => {
             localStorage.setItem("genius-token", data.token);
             navigate(from, { replace: true });
           });
-
       })
       .catch((error) => console.log(error));
   };
@@ -86,7 +84,7 @@ const Login = () => {
             </div>
           </form>
           <p className="text-center">
-            New to Go-Travel: {" "}
+            New to Go-Travel:{" "}
             <Link className="text-orange-600 font-bold" to="/signup">
               Sign Up
             </Link>

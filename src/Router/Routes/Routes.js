@@ -39,7 +39,8 @@ const router = createBrowserRouter([
       {
         path: "/services/:id",
         element: <ServiceDetails></ServiceDetails>,
-        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://go-travel-server.vercel.app/services/${params.id}`),
       },
       {
         path: "/reviews",
@@ -50,13 +51,13 @@ const router = createBrowserRouter([
         element: <AddService></AddService>,
       },
       {
-        path: '/seemore',
-        element: <SeeMore></SeeMore>
+        path: "/seemore",
+        element: <SeeMore></SeeMore>,
       },
       {
-        path: '*',
-        element: <Error></Error>
-      }
+        path: "*",
+        element: <Error></Error>,
+      },
     ],
   },
 ]);
