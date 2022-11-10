@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 // import { setAuthToken } from "../../../api/auth";
 import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
+import useTitle from "../../../hooks/useTitle";
 
 const SocialLogin = () => {
   const { googleSignIn } = useContext(AuthContext);
+  useTitle('Social Login');
 
   const handleGoogleSignIn = () => {
     googleSignIn()
