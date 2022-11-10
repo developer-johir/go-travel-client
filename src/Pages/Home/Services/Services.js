@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useTitle from "../../../hooks/useTitle";
 import ServicesCard from "./ServicesCard";
 
 const Services = () => {
@@ -8,8 +9,9 @@ const Services = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+  useTitle('Services')
   return (
-    <div className="py-10 text-center ">
+    <div className="py-10">
       <div className="pl-14">
           <h2 className="text-xl font-bold text-red-500">Choose Your Package</h2>
           <h1 className="text-5xl font-bold mt-4">
