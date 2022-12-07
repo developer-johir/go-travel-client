@@ -1,3 +1,10 @@
+1. Name: Go-Travel
+2. Live Link: https://go-travel-da4ba.web.app/
+3. This is a travel/tourist guide service-related website. Here, The main feature is that every user can give feedback/review and delete his review.
+5. Another key feature is users can add services. 
+6. Here I implement email-password authentication and Google authentication.
+7. Technology: React js, React router, tailwind, verceI, jwt, Firebase, ExpressJs.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
